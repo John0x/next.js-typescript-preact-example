@@ -7,11 +7,16 @@
     "tsc:prod": "tsc",
     "build": "npm run tsc && next build",
     "build:prod": "npm run tsc:prod && next build",
-    "export": "next export",
-    "next": "next"
+    "run": "node server.js",
+    "run:prod": "cross-env NODE_ENV=dev node server.js",
+    "export": "next export"
   },
   "dependencies": {
+    "cross-env": "^5.0.5",
+    "module-alias": "^2.0.1",
     "next": "latest",
+    "preact": "^8.2.5",
+    "preact-compat": "^3.17.0",
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
   },
