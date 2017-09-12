@@ -1,0 +1,23 @@
+{
+  "name": "with-typescript",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "concurrently \"tsc --watch\" next",
+    "tsc": "tsc",
+    "tsc:prod": "tsc",
+    "build": "npm run tsc && next build",
+    "build:prod": "npm run tsc:prod && next build",
+    "export": "next export",
+    "next": "next"
+  },
+  "dependencies": {
+    "next": "latest",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  },
+  "devDependencies": {
+    "@types/react": "^16.0.5",
+    "concurrently": "^3.1.0",
+    "typescript": "^2.1.5"
+  }
+}
